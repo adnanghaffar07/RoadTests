@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test for Validation">
+	<test name="InnRoad Tests" preserve-order="true">
+		<classes>
+			<class name="Tests.Test_Login" />
+			<methods>
+			      <include name="clickLoginWithAllEmptyFields" />   
+			      <include name="ClickLoginButtonWhenClientFieldEmpty" />  
+			      <include name="ClickLoginButtonWhenUserFieldEmpty" />  
+			      <include name="ClickLoginButtonWhenPasswordFieldEmpty" />  
+			      <include name="ShouldnotExecuteJSInAllFields" /> 
+			</methods>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[URL:http://kembledev.client.inrd.io/]]>
+    </line>
+  </reporter-output>
+  <suite name="Test for Search Room" duration-ms="42426" started-at="2018-01-23T11:05:10Z" finished-at="2018-01-23T11:05:53Z">
+    <groups>
+    </groups>
+    <test name="Kemble Tests" duration-ms="42426" started-at="2018-01-23T11:05:10Z" finished-at="2018-01-23T11:05:53Z">
+      <class name="Tests.Test_Kembledev">
+        <test-method status="PASS" signature="bookRoom()[pri:0, instance:Tests.Test_Kembledev@4501b7af]" name="bookRoom" duration-ms="42395" started-at="2018-01-23T16:05:11Z" finished-at="2018-01-23T16:05:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[URL:http://kembledev.client.inrd.io/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bookRoom -->
+      </class> <!-- Tests.Test_Kembledev -->
+    </test> <!-- Kemble Tests -->
+  </suite> <!-- Test for Search Room -->
+</testng-results>

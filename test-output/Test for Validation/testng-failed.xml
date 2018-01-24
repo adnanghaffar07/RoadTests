@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test for Validation]">
+  <test name="InnRoad Tests(failed)">
+    <classes>
+      <class name="Tests.Test_Login">
+        <methods>
+          <include name="ShouldnotExecuteJSInAllFields"/>
+        </methods>
+      </class> <!-- Tests.Test_Login -->
+    </classes>
+  </test> <!-- InnRoad Tests(failed) -->
+</suite> <!-- Failed suite [Test for Validation] -->

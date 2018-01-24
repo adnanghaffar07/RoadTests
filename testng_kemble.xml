@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test for Search Room">
+	<test name="Kemble Tests" preserve-order="true">
+		<classes>
+			<class name="Tests.Test_Kembledev" />
+			<methods>
+			 <!--   <include name="searchForRoom" /> 
+			  <include name="toatalRoomsInSearch" />   
+			  <include name="viewRoomInfo" />  
+			   <include name="editReservationDeatils" />    -->
+			    <include name="bookRoom" />   
+			  
+			</methods>
+		</classes>
+	</test>
+</suite>
