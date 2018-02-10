@@ -4,12 +4,20 @@
 		<classes>
 			<class name="Tests.Test_Kembledev" />
 			<methods>
-			 <!--   <include name="searchForRoom" /> 
-			  <include name="toatalRoomsInSearch" />   
-			  <include name="viewRoomInfo" />  
-			   <include name="editReservationDeatils" />    -->
-			    <include name="bookRoom" />   
-			  
+		    <!--    <include name="RoomSearchWithoutPromoCode" /> 
+			   <include name="RoomSearchWithPromoCode" /> 
+			   <include name="RoomSearchResultAfterRefreshingResult" /> 
+			   <include name="RoomSearchWithoutPromoCodeChangeDate" />  
+			   <include name="RoomSearchWithPromoCodeChangeDate" /> 
+			   <include name="ViewRoomDetails" /> 
+			   <include name="EditReservationDeatils" />
+			   <include name="TotalRoomsInSearch" /> 
+			   <include name="RoomPolicy" />  
+			   <include name="BackNavigation" /> 
+			   <include name="bookRoomWithExtras" /> 
+			   <include name="bookRoomWithoutExtras" /> -->
+			   <include name="GuestInfoFields" />
+			   
 			</methods>
 		</classes>
 	</test>

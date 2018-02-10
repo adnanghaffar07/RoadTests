@@ -18,9 +18,9 @@ public class Test_Login extends Configuration {
 
 @Test()	
 public static void clickLoginWithAllEmptyFields(){
-			beforeTest(TestURL.sitr_url);
+			beforeTest(TestURL.site_url);
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			Reporter.log("URL:"+TestURL.sitr_url);
+			Reporter.log("URL:"+TestURL.site_url);
 			LoginPage.loginButton(driver).click();
            
 			String ClientIdError= LoginPage.lableError(driver,0).getText();
@@ -39,11 +39,11 @@ public static void clickLoginWithAllEmptyFields(){
 
 @Test()	
 public static void ClickLoginButtonWhenClientFieldEmpty(){
-			beforeTest(TestURL.sitr_url);
+			beforeTest(TestURL.site_url);
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			Reporter.log("URL:"+TestURL.sitr_url);
-			LoginPage.userIdInput(driver).sendKeys(Data.UserId);
-			LoginPage.passwordInput(driver).sendKeys(Data.UserPassword);
+			Reporter.log("URL:"+TestURL.site_url);
+			LoginPage.userIdField(driver).sendKeys(Data.UserId);
+			LoginPage.passwordField(driver).sendKeys(Data.UserPassword);
 			LoginPage.loginButton(driver).click();
            
 			String ClientIdError= LoginPage.lableError(driver,0).getText();
@@ -54,11 +54,11 @@ public static void ClickLoginButtonWhenClientFieldEmpty(){
 
 @Test()	
 public static void ClickLoginButtonWhenUserFieldEmpty(){
-			beforeTest(TestURL.sitr_url);
+			beforeTest(TestURL.site_url);
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			Reporter.log("URL:"+TestURL.sitr_url);
-			LoginPage.clientIdInput(driver).sendKeys(Data.ClientId);
-			LoginPage.passwordInput(driver).sendKeys(Data.UserPassword);
+			Reporter.log("URL:"+TestURL.site_url);
+			LoginPage.clientIdField(driver).sendKeys(Data.ClientId);
+			LoginPage.passwordField(driver).sendKeys(Data.UserPassword);
 			LoginPage.loginButton(driver).click();
            
 			String UserIdError= LoginPage.lableError(driver,1).getText();
@@ -70,11 +70,11 @@ public static void ClickLoginButtonWhenUserFieldEmpty(){
 
 @Test()	
 public static void ClickLoginButtonWhenPasswordFieldEmpty(){
-			beforeTest(TestURL.sitr_url);
+			beforeTest(TestURL.site_url);
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			Reporter.log("URL:"+TestURL.sitr_url);
-			LoginPage.clientIdInput(driver).sendKeys(Data.ClientId);
-			LoginPage.userIdInput(driver).sendKeys(Data.UserId);
+			Reporter.log("URL:"+TestURL.site_url);
+			LoginPage.clientIdField(driver).sendKeys(Data.ClientId);
+			LoginPage.userIdField(driver).sendKeys(Data.UserId);
 			LoginPage.loginButton(driver).click();
            
 			String passwordError= LoginPage.lableError(driver,2).getText();
@@ -85,12 +85,12 @@ public static void ClickLoginButtonWhenPasswordFieldEmpty(){
 		}
 @Test()
 public static void ShouldnotExecuteJSInAllFields(){
-			beforeTest(TestURL.sitr_url);
+			beforeTest(TestURL.site_url);
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			Reporter.log("URL:"+TestURL.sitr_url);
-			LoginPage.clientIdInput(driver).sendKeys(Data.InvalidData);
-			LoginPage.userIdInput(driver).sendKeys(Data.InvalidData);
-			LoginPage.passwordInput(driver).sendKeys(Data.InvalidData);
+			Reporter.log("URL:"+TestURL.site_url);
+			LoginPage.clientIdField(driver).sendKeys(Data.InvalidData);
+			LoginPage.userIdField(driver).sendKeys(Data.InvalidData);
+			LoginPage.passwordField(driver).sendKeys(Data.InvalidData);
 			LoginPage.loginButton(driver).click();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			String login_error= LoginPage.loginError(driver,1).getText();
