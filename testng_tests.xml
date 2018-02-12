@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test for Search Room">
+	<test name="Kemble Tests" preserve-order="true">
+		<classes>
+			<class name="Tests.Tests" />
+			<methods>
+		       <include name="cteateUnitOverAccount" /> 
+		     <!--   <include name="cteateTravelAgentAccount" /> 
+		        <include name="cteateAndVerifyRules" /> -->
+			</methods>
+		</classes>
+	</test>
+</suite>
