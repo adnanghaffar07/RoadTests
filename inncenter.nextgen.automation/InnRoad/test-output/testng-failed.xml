@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [Test for Search Room]">
+  <test name="Kemble Tests(failed)">
+    <classes>
+      <class name="Tests.Tests">
+        <methods>
+          <include name="cteateUnitOverAccount"/>
+        </methods>
+      </class> <!-- Tests.Tests -->
+    </classes>
+  </test> <!-- Kemble Tests(failed) -->
+</suite> <!-- Failed suite [Test for Search Room] -->

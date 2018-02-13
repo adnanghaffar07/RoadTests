@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[File has been downloaded]]>
+    </line>
+  </reporter-output>
+  <suite name="Test for Search Room" duration-ms="143901" started-at="2018-02-10T00:52:14Z" finished-at="2018-02-10T00:54:38Z">
+    <groups>
+    </groups>
+    <test name="Kemble Tests" duration-ms="143901" started-at="2018-02-10T00:52:14Z" finished-at="2018-02-10T00:54:38Z">
+      <class name="Tests.Tests">
+        <test-method status="PASS" signature="cteateUnitOverAccount()[pri:0, instance:Tests.Tests@2173f6d9]" name="cteateUnitOverAccount" duration-ms="143877" started-at="2018-02-10T05:52:14Z" finished-at="2018-02-10T05:54:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[File has been downloaded]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cteateUnitOverAccount -->
+      </class> <!-- Tests.Tests -->
+    </test> <!-- Kemble Tests -->
+  </suite> <!-- Test for Search Room -->
+</testng-results>

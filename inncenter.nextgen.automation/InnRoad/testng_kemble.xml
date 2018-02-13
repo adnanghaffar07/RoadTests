@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test for Search Room">
+	<test name="Kemble Tests" preserve-order="true">
+		<classes>
+			<class name="Tests.Test_Kembledev" />
+			<methods>
+		    <!--    <include name="RoomSearchWithoutPromoCode" /> 
+			   <include name="RoomSearchWithPromoCode" /> 
+			   <include name="RoomSearchResultAfterRefreshingResult" /> 
+			   <include name="RoomSearchWithoutPromoCodeChangeDate" />  
+			   <include name="RoomSearchWithPromoCodeChangeDate" /> 
+			   <include name="ViewRoomDetails" /> 
+			   <include name="EditReservationDeatils" />
+			   <include name="TotalRoomsInSearch" /> 
+			   <include name="RoomPolicy" />  
+			   <include name="BackNavigation" /> 
+			   <include name="bookRoomWithExtras" /> 
+			   <include name="bookRoomWithoutExtras" /> -->
+			   <include name="GuestInfoFields" />
+			   
+			</methods>
+		</classes>
+	</test>
+</suite>
