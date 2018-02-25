@@ -8,8 +8,42 @@ public class Data {
 	public static String ErrorMessageClientId = "Please enter a valid client code.";
 	public static String ErrorMessageUserId = "Please enter a valid user id.";
 	public static String ErrorMessageUserpassword = "Please enter a valid password.";
-	
-	
-
-	
+	public static String AccountName = "Auto Test";
+	public static String FirstName = "Auto";
+	public static String LastName = "Auto";
+	public static String GuestFirstName = "Auto";
+	public static String GuestLastName = "Auto";
+	public static String GuestName = "Auto";
+	public static String EmailId = "test1@gmail.com";
+	public static String GuestEmailId = "guest@gmail.com";
+	public static String PhoneNumber = "1234567891";
+	public static String Address = "house # 12";
+	public static String City = "Alaska";
+	public static String PostalCode= "12345";
+	public static String RuleName= "Test rule";
+	public static String RateName= "Rate name";
+	public static String RuleValue= "123";
+	public static String RuleDescription= "Description";
+	public static String AccountNumber= "220000000003229";
+	public static String CheckIn= "Feb 22, 2018";
+	public static String CheckOut= "Feb 23, 2018";
+	public static String Amount= "1";
+	public static String AmountType= "Check";
+	public static String RoomClassName= "Test Class";
+	public static String MaxAdult= "1";
+	public static String MaxPersosn= "1";
+	public static String RoomQuentity= "1";
+	public static String RoomNo= "1";
+	public static String RoleName= "Generic34 Role122";
+	public static String RoleDescription= "Description";
+	public static String MerchantAccountName= "Auto";
+	public static String MerchantTranscationCode= "Auto";
+	public static String MerchantPin= "1";
+	public static String LoginID = "auto";
+	public static String SessionName = "My Session";
+	public static String StartDate= "Feb 14, 2018";
+	public static String EndDate= "Feb 25, 2018";
+	public static String PolicyName= "auto";
+	public static String RoomCharger= "1";
+	public static String PolicyDescription= "Policy description";
 }

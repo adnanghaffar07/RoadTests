@@ -9,16 +9,16 @@ import org.openqa.selenium.WebElement;
 public class LoginPage {
 	
 	private static WebElement element = null;
-	public static WebElement clientIdInput(WebDriver driver) {
+	public static WebElement clientIdField(WebDriver driver) {
 		element = driver.findElement(By.id("txtclientCode"));
 		return element;		
 	}
-	public static WebElement userIdInput(WebDriver driver) {
+	public static WebElement userIdField(WebDriver driver) {
 		element = driver.findElement(By.id("txtLoginID"));
 		return element;
 		
 	}
-	public static WebElement passwordInput(WebDriver driver) {
+	public static WebElement passwordField(WebDriver driver) {
 		element = driver.findElement(By.id("txtUserPassword"));
 		return element;
 		

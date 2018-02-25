@@ -8,23 +8,36 @@ import org.openqa.selenium.WebElement;
 public class KembledevPage {
 	
 	private static WebElement element = null;
+	private static boolean isPresent = false;
+
 	public static WebElement checkInDatePicker(WebDriver driver) {
 		element = driver.findElement(By.id("checkIn"));
 		return element;		
 	}
-	public static WebElement pickDateForCheckIN(WebDriver driver) {
-		By calendarXpath = By
-				.xpath("//*[@id='app']/div/div/section/div[2]/div/form/"
-						+ "div/div/div/div[1]/div/div[2]/div[1]/div/div[3]/div/div[2]/table/tbody/tr[4]/td[7]/div/span");
-		element=driver.findElement(calendarXpath);
-		return element;
+	public static WebElement pickDateForCheckIN(WebDriver driver,int index,int date) {
+		List<WebElement>check_in = driver.findElements(By.xpath("//span[text() = "+date+"]"));
+		return element = check_in.get(index);
 	}
-	public static WebElement pickDateForCheckOut(WebDriver driver) {
-		By calendarXpath = By
-				.xpath("//*[@id='app']/div/div/section/div[2]/div/form/"
-						+ "div/div/div/div[1]/div/div[2]/div[1]/div/div[3]/div/div[2]/table/tbody/tr[5]/td[1]/div/span");
-		element=driver.findElement(calendarXpath);
-		return element;
+	public static WebElement pickDateForCheckOut(WebDriver driver , int index, int date) {
+		List<WebElement>check_in = driver.findElements(By.xpath("//span[text() = 29]"));
+		return element = check_in.get(index);	
+	}
+	public static WebElement changeDateForCheckIN(WebDriver driver,int index,int date) {
+		List<WebElement>check_in = driver.findElements(By.xpath("//span[text() = "+date+"]"));
+		return element = check_in.get(index);
+	}
+	public static WebElement changeDateForCheckOut(WebDriver driver , int index,int date) {
+		List<WebElement>check_in = driver.findElements(By.xpath("//span[text() = "+date+"]"));
+		return element = check_in.get(index);	
+	}
+
+	public static WebElement staticDatePickerCheckIn(WebDriver driver , int index, int date) {
+		List<WebElement>date_picker = driver.findElements(By.xpath("//span[text() = "+date+"]"));
+		return element = date_picker.get(index);	
+	}
+	public static WebElement staticDatePickerCheckOut(WebDriver driver , int index, int date) {
+		List<WebElement>date_picker = driver.findElements(By.xpath("//span[text() = "+date+"]"));
+		return element = date_picker.get(index);	
 	}
 	public static WebElement checkOutDatePicker(WebDriver driver) {
 		element = driver.findElement(By.id("checkOut"));
@@ -100,6 +113,20 @@ public class KembledevPage {
 		element = total_cost.get(index);
 		return element;		
 	}
+	public static WebElement roomDescriptions(WebDriver driver,int index) {
+		List<WebElement> view_description =driver.findElements(By.cssSelector(".room__descTabPane___3LQXQ div"));
+		element = view_description.get(index);
+		return element;		
+	}
+	public static int totalAmenities(WebDriver driver) {
+		List<WebElement> amunties =driver.findElements(By.cssSelector(".room__descTabPane___3LQXQ div ul li"));
+		return amunties.size();		
+	}
+	public static WebElement amenities(WebDriver driver,int index) {
+		List<WebElement> amunties =driver.findElements(By.cssSelector(".room__descTabPane___3LQXQ div ul li"));
+		element = amunties.get(index);
+		return element;		
+	}
 	public static WebElement editReservationDetailsButton(WebDriver driver) {
 		element =driver.findElement(By.cssSelector(".room__title___3eWcd a i"));
 		return element;		
@@ -116,6 +143,22 @@ public class KembledevPage {
 	public static WebElement checkOutMeLink(WebDriver driver) {
 		element = driver.findElement(By.cssSelector(".addons__checkoutSection___1-geM button span"));
 		return element;		
+	}
+	public static WebElement addOrRemoveExtraThing(WebDriver driver, int index) {
+		List<WebElement>extra_list = driver.findElements(By.className("addOn__counterButton___3YYE4"));
+		return element = extra_list.get(index);		
+	}
+	public static WebElement ExtraThingPriceInForm(WebDriver driver, int index) {
+		List<WebElement>extra_price_list = driver.findElements(By.cssSelector(".checkout__sidebarContent___hcNnV div span"));
+		return element = extra_price_list.get(index);		
+	}
+	public static WebElement checkExtraThingAdded(WebDriver driver) {
+		element = driver.findElement(By.cssSelector(".addons__checkoutSection___1-geM button span"));
+		return element ;		
+	}
+	public static WebElement removeExtraThing(WebDriver driver, int index) {
+		List<WebElement>extra_list = driver.findElements(By.className("addOn__counterButton___3YYE4 btn"));
+		return element = extra_list.get(index);		
 	}
 	public static WebElement firstNameField(WebDriver driver) {
 		element = driver.findElement(By.id("firstName"));
@@ -171,6 +214,70 @@ public class KembledevPage {
 		element = driver.findElement(By.id("cvv"));
 		return element;		
 	}
+	
+	
+	
+	
+	public static Boolean firstNameFieldIsPresent(WebDriver driver) {
+		isPresent = driver.findElements(By.id("")).size() > 0;
+		return isPresent;		
+	}
+	public static Boolean lastNameFieldIsPresent(WebDriver driver) {
+		isPresent = driver.findElements(By.id("lastNames")).size()>0;
+		return isPresent;		
+	}
+	public static Boolean emailAddressFieldIsPresnt(WebDriver driver) {
+		isPresent = driver.findElements(By.id("emailAddress")).size()>0;
+		return isPresent;		
+	}
+	public static Boolean phoneNumberFieldIsPresnt(WebDriver driver) {
+		isPresent = driver.findElements(By.id("phoneNumber")).size()>0;
+		return isPresent;		
+	}
+	public static Boolean homeAddressFieldIsPresnt(WebDriver driver) {
+		isPresent = driver.findElements(By.id("homeAddress")).size()>0;
+		return isPresent;		
+	}
+	public static Boolean zipcodeFieldIsPresnt(WebDriver driver) {
+		isPresent = driver.findElements(By.id("homeZipCode")).size()>0;
+		return isPresent;		
+	}
+	public static Boolean cityFieldIsPresnt(WebDriver driver) {
+		isPresent = driver.findElements(By.id("homeCity")).size()>0;
+		return isPresent;		
+	}
+	public static WebElement stateButtonIsPresnt(WebDriver driver) {
+		List<WebElement> state_button = driver.findElements(By.className("dropdown-toggle"));
+		element = state_button.get(2);
+		return element;		
+	}
+	public static WebElement selectSateIsPresnt(WebDriver driver,int index) {
+		List<WebElement> state_list = driver.findElements(By.cssSelector(".homeState-group div div ul li"));
+		element = state_list.get(index);
+		return element;		
+	}
+	public static Boolean ccNumberFieldIsPresnt(WebDriver driver) {
+		isPresent = driver.findElements(By.id("creditCardNumber")).size()>0;
+		return isPresent;		
+	}
+	public static Boolean ccExpDateFieldIsPresnt(WebDriver driver) {
+		isPresent = driver.findElements(By.id("expirationDate")).size()>0;
+		return isPresent;		
+	}
+	public static Boolean cardFullNameFieldIsPresent(WebDriver driver) {
+		isPresent = driver.findElements(By.id("cardFullName")).size()>0;
+		return isPresent;		
+	}
+	public static Boolean cvvFieldIsPresnt(WebDriver driver) {
+		isPresent = driver.findElements(By.id("cvv")).size()>0;
+		return isPresent;		
+	}
+	
+	
+	
+	
+	
+	
 	public static WebElement agreeCheckBox(WebDriver driver) {
 		List<WebElement> agree_checkbox = driver.findElements(By.cssSelector(".checkbox__inputWrapper___2O6kx i"));
 		return element = agree_checkbox.get(1);		
@@ -179,5 +286,8 @@ public class KembledevPage {
 		List<WebElement> book_button = driver.findElements(By.className("searchForm__submitButton___1Ksmn"));
 		return element = book_button.get(0);		
 	}
-	
+	public static WebElement backBuuton(WebDriver driver) {
+		element = driver.findElement(By.cssSelector(".room__backRoomsLink___2uMBr span"));
+		return element;		
+	}
 }
